@@ -19,6 +19,7 @@ module String = struct
   let lowercase = lowercase_ascii
   let uppercase = uppercase_ascii
   let capitalize = capitalize_ascii
+  let uncapitalize s = uncapitalize_ascii s
 end
 module Char = struct
   include Char
