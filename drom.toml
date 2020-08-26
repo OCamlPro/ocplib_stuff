@@ -9,7 +9,7 @@ min-edition = "4.03.0"
 mode = "binary"
 name = "ocplib_stuff"
 synopsis = "Basic stuff used by some OCP libraries and tools"
-version = "0.1.0"
+version = "0.2.0"
 
 # keys that you could also define:
 # dev-repo = "...dev-repo..."

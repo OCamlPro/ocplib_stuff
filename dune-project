@@ -3,7 +3,7 @@
 (name ocplib_stuff)
 (allow_approximate_merlin)
 (generate_opam_files false)
-(version 0.1.0)
+(version 0.2.0)
 
 (package
  (name ocplib_stuff)
