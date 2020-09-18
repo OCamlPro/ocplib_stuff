@@ -36,13 +36,21 @@ skip = "src/dune src/main.ml"
 
 [dependencies]
 
+[tools.ocamlformat]
+for-test = true
+[tools.odoc]
+for-doc = true
+[tools.ppx_expect]
+for-test = true
+[tools.ppx_inline_test]
+for-test = true
+
 [tools]
 dune = "2.6.0"
 
 [project]
 pack-modules = false
 skip-dirs = []
-
 
 [[package]]
 dir = "src"
