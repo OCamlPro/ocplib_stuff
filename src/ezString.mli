@@ -57,3 +57,13 @@ val split : string -> char -> string list
 (** [split s c] splits the string [s] on characters [c],
    starting from the left, removing empty sub strings. *)
 val split_simplify : string -> char -> string list
+
+(* [chop_prefix s ~prefix] returns [None] if the string [s] does not
+   start with [prefix], and otherwise, it returns [Some suffix] such
+   that [s = prefix ^ suffix]. Only in 0.2.2. *)
+val chop_prefix : string -> prefix:string -> string option
+
+(* [chop_suffix s ~suffix] returns [None] if the string [s] does not
+   end with [suffix], and otherwise, it returns [Some prefix] such
+   that [s = prefix ^ suffix]. Only in 0.2.2. *)
+val chop_suffix : string -> suffix:string -> string option

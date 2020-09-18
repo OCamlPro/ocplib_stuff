@@ -3,7 +3,8 @@
 (name ocplib_stuff)
 (allow_approximate_merlin)
 (generate_opam_files false)
-(version 0.2.0)
+(version 0.2.2)
+(formatting (enabled_for ocaml reason))
 
 (package
  (name ocplib_stuff)
@@ -12,5 +13,4 @@
  (depends
    (ocaml (>= 4.03.0))
    (dune (and (>= 2.6.0) (< 3.0.0)))
- )
-)
+ ))

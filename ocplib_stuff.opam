@@ -2,10 +2,10 @@
 # Do not modify or add to the `skip` field of `drom.toml`.
 opam-version: "2.0"
 name: "ocplib_stuff"
-version: "0.2.0"
+version: "0.2.2"
 license: "LGPL-2.1-with-OCaml-exception"
 synopsis: "Basic stuff used by some OCP libraries and tools"
-description: """
+description: """\
 This library contains some basic stuff that is used in some OCP libraries 
 and applications. Most of them are probably available in other extensions
 of the standard libraries (extlib, core, etc.), but we are used to these
@@ -17,6 +17,7 @@ homepage: "https://ocamlpro.github.io/ocplib_stuff"
 doc: "https://ocamlpro.github.io/ocplib_stuff/sphinx"
 bug-reports: "https://github.com/ocamlpro/ocplib_stuff/issues"
 dev-repo: "git+https://github.com/ocamlpro/ocplib_stuff.git"
+tags: "org:ocamlpro"
 build: [
   ["dune" "subst"] {pinned}
   [
@@ -33,5 +34,6 @@ build: [
 ]
 depends: [
   "ocaml" {>= "4.03.0"}
+  "dune" {>= "2.6.0"}
   "dune" {>= "2.6.0" & < "3.0.0"}
 ]

@@ -119,3 +119,19 @@ let _ =
   assert (split_simplify "ototo" 'o' = ["t"; "t"]);
   assert (split_simplify "tot" 'o' = ["t"; "t"]);
   ()
+
+let chop_prefix s ~prefix =
+  if starts_with s ~prefix then
+    let prefix_len = String.length prefix in
+    let len = String.length s in
+    Some ( String.sub s prefix_len (len - prefix_len) )
+  else
+    None
+
+let chop_suffix s ~suffix =
+  if ends_with s ~suffix then
+    let suffix_len = String.length suffix in
+    let len = String.length s in
+    Some ( String.sub s 0 (len - suffix_len) )
+  else
+    None
