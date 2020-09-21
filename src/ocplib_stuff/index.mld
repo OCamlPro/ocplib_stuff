@@ -7,4 +7,5 @@ of the standard libraries (extlib, core, etc.), but we are used to these
 ones.
 
 
-This library exposes the following toplevel modules: {!modules:EzArray EzBytes EzCompat.3_12_1 EzCompat.4_02_0 EzCompat.4_03_0 EzList EzString MinUnix}
+This library exposes the following toplevel modules:
+{!modules:EzArray EzBytes EzCompat.3_12_1 EzCompat.4_02_0 EzCompat.4_03_0 EzList EzString MinUnix}
