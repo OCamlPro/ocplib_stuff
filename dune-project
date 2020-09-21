@@ -11,6 +11,10 @@
  (synopsis "Basic stuff used by some OCP libraries and tools")
  (description "This library contains some basic stuff that is used in some OCP libraries \nand applications. Most of them are probably available in other extensions\nof the standard libraries (extlib, core, etc.), but we are used to these\nones.\n")
  (depends
-   (ocaml (>= 4.03.0))
+   (ocaml (>= 4.07.0))
+   ppx_inline_test
+   ppx_expect
+   odoc
+   ocamlformat
    (dune (and (>= 2.6.0) (< 3.0.0)))
  ))
