@@ -1,4 +1,3 @@
-
 {1 Library ocplib_stuff}
 
 This library contains some basic stuff that is used in some OCP libraries 
@@ -7,5 +6,6 @@ of the standard libraries (extlib, core, etc.), but we are used to these
 ones.
 
 
-This library exposes the following toplevel modules:
-{!modules:EzArray EzBytes EzCompat.3_12_1 EzCompat.4_02_0 EzCompat.4_03_0 EzList EzString MinUnix}
+
+The entry point of this library is the module: {!Ocplib_stuff}.
+
