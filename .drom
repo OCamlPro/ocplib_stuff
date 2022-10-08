@@ -1,11 +1,11 @@
 # Keep this file in your GIT repo to help drom track generated files
 # begin version
-version:0.6.0
+version:0.6.1
 # end version
 
 # hash of toml configuration files
 # used for generation of all files
-9f187f8066a377de734fd68f0a629bb6:.
+e712a2194f48d679c08c6cec32d2ef62:.
 # end context for .
 
 # begin context for .github/workflows/ci.ml
@@ -55,7 +55,7 @@ a8d1bcd6f62c6b813b77d3ff8959d8d2:.ocamlformat-ignore
 
 # begin context for README.md
 # file README.md
-ec663b536e0ed8ac78e3cd75dc7f8287:README.md
+2fd615374d29bbe0d581580348272748:README.md
 # end context for README.md
 
 # begin context for docs/.nojekyll
@@ -80,7 +80,7 @@ e739f3026aa997af4026bc428f4c9ef6:docs/favicon.png
 
 # begin context for docs/index.html
 # file docs/index.html
-49ceee0125eaa7d4198667294d70a7bf:docs/index.html
+ce89aee8f9201a047397427da15b17a0:docs/index.html
 # end context for docs/index.html
 
 # begin context for docs/sphinx/index.html
@@ -105,12 +105,12 @@ c8281f46ba9a11d0b61bc8ef67eaa357:docs/style.css
 
 # begin context for dune-project
 # file dune-project
-1be2fcf20c5d18470aad3c66663ae6fe:dune-project
+6a9910eb1b59dd9cd932f87337dcf430:dune-project
 # end context for dune-project
 
 # begin context for opam/ocplib_stuff.opam
 # file opam/ocplib_stuff.opam
-3d15851857f0064ce0ef029d525ff5a9:opam/ocplib_stuff.opam
+8d82a9ca4b66ffd04a4d0cb72a34a485:opam/ocplib_stuff.opam
 # end context for opam/ocplib_stuff.opam
 
 # begin context for scripts/after.sh
@@ -135,7 +135,7 @@ bb3a9d286f0dc64021db4194427263ee:scripts/copy-bin.sh
 
 # begin context for sphinx/about.rst
 # file sphinx/about.rst
-4e9034cd919d22ab73bf27da77bc1e9c:sphinx/about.rst
+9aab87bc45e0fdc998baebf19d5cb713:sphinx/about.rst
 # end context for sphinx/about.rst
 
 # begin context for sphinx/conf.py
@@ -160,7 +160,7 @@ abc6ae223dbcd2a710665e948f370518:sphinx/license.rst
 
 # begin context for src/ocplib_stuff/index.mld
 # file src/ocplib_stuff/index.mld
-27a65ff15062dbc15fc4d5767a57b36a:src/ocplib_stuff/index.mld
+8d28d4fa316a48ef670f5f0513c3498d:src/ocplib_stuff/index.mld
 # end context for src/ocplib_stuff/index.mld
 
 # begin context for test/expect-tests/dune

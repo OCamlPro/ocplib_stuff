@@ -11,7 +11,7 @@ min-edition = "4.07.0"
 mode = "binary"
 name = "ocplib_stuff"
 synopsis = "Basic stuff used by some OCP libraries and tools"
-version = "0.3.0"
+version = "0.3.1"
 windows-ci = true
 
 # keys that you could also define:
@@ -25,7 +25,7 @@ windows-ci = true
 
 [project]
 description = """
-This library contains some basic stuff that is used in some OCP libraries 
+This library contains some basic stuff that is used in some OCP libraries
 and applications. Most of them are probably available in other extensions
 of the standard libraries (extlib, core, etc.), but we are used to these
 ones.
