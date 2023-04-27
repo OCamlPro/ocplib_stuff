@@ -1,20 +1,21 @@
 [project]
-drom-version = "0.1.0"
+drom-version = "0.1"
 
 [project]
 authors = ["Fabrice Le Fessant <fabrice.le_fessant@ocamlpro.com>"]
+ci-systems = ["ubuntu-latest", "macos-latest", "windows-latest"]
 copyright = "OCamlPro SAS"
 edition = "4.10.0"
 github-organization = "ocamlpro"
 license = "LGPL2"
 min-edition = "4.07.0"
-mode = "binary"
 name = "ocplib_stuff"
+skeleton = "program"
 synopsis = "Basic stuff used by some OCP libraries and tools"
-version = "0.3.0"
-windows-ci = true
+version = "0.4.0"
 
 # keys that you could also define:
+# odoc-target = "...odoc-target..."
 # sphinx-target = "...sphinx-target..."
 # archive = "...archive..."
 # dev-repo = "...dev-repo..."
@@ -31,13 +32,15 @@ of the standard libraries (extlib, core, etc.), but we are used to these
 ones.
 """
 
-[drom]
-skip = "src/ocplib_stuff/dune src/ocplib_stuff/main.ml CHANGES.md"
+[project]
+skip = ["src/ocplib_stuff/dune", "src/ocplib_stuff/main.ml", "CHANGES.md"]
 
+# project-wide library dependencies (not for package-specific deps)
 [dependencies]
 
-[tools.dune]
-
+# project-wide tools dependencies (not for package-specific deps)
+[tools]
+dune = ">=2.6.0"
 [tools.ocamlformat]
 for-test = true
 [tools.odoc]
@@ -48,12 +51,33 @@ for-test = true
 for-test = true
 
 [project]
-pack-modules = false
+
+# dirs to skip while scanning for dune files
 skip-dirs = []
 
+# dirs to scan for share/ folders (with package names)
+share-dirs = ["share"]
+
+# build profile to use by default
+# build-profile = ...
+
+# Profile options for this project
+#    [profile]
+#    dev = { ocaml-flags = "-w +a-4-40-41-42-44" }
+#    release = { ocaml-flags = "-w -a" }
+[profile]
+# ...
+
+# project-wide fields (depends on project skeleton)
+# examples:
+#  docker-alpine-image = "ocamlpro/ocaml:4.13"
+#  dune-lang = "2.1"
+#  readme-trailer = "..."
+#  dot-gitignore-trailer = "..."
+[fields]
+# ...
 
 [[package]]
 dir = "src/ocplib_stuff"
-kind = "library"
-name = "ocplib_stuff"
+# edit 'src/ocplib_stuff/package.toml' for package-specific options
 

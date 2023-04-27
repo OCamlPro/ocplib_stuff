@@ -1,11 +1,11 @@
 # Keep this file in your GIT repo to help drom track generated files
 # begin version
-version:0.6.0
+version:0.9.0
 # end version
 
 # hash of toml configuration files
 # used for generation of all files
-9f187f8066a377de734fd68f0a629bb6:.
+3254d8952fc5b167be2feb1bb0f08ea6:.
 # end context for .
 
 # begin context for .github/workflows/ci.ml
@@ -30,7 +30,7 @@ be2d226b0dc658a425e86af1847a2316:.ocamlformat
 
 # begin context for .ocamlformat-ignore
 # file .ocamlformat-ignore
-a8d1bcd6f62c6b813b77d3ff8959d8d2:.ocamlformat-ignore
+c8f70450e7d78c0387644864ffe8cbd5:.ocamlformat-ignore
 # end context for .ocamlformat-ignore
 
 # begin context for .ocp-indent
@@ -45,12 +45,12 @@ a8d1bcd6f62c6b813b77d3ff8959d8d2:.ocamlformat-ignore
 
 # begin context for LICENSE.md
 # file LICENSE.md
-3e8c72433d2b8531f0e9716ab0e5fc8a:LICENSE.md
+e31b19b601ab25353ef16d67127735f1:LICENSE.md
 # end context for LICENSE.md
 
 # begin context for Makefile
 # file Makefile
-0fffa64d310c4fcb623647c77bffa70f:Makefile
+364fa2d2138c05a9aea67cb98e599504:Makefile
 # end context for Makefile
 
 # begin context for README.md
@@ -96,6 +96,7 @@ c8281f46ba9a11d0b61bc8ef67eaa357:docs/style.css
 # begin context for drom.toml
 # file drom.toml
 4dc0955d88ac516fc3ea7adcc83360d5:drom.toml
+8ddbcdeac142dd52eecd387672f0d601:drom.toml
 # end context for drom.toml
 
 # begin context for dune
@@ -105,22 +106,22 @@ c8281f46ba9a11d0b61bc8ef67eaa357:docs/style.css
 
 # begin context for dune-project
 # file dune-project
-1be2fcf20c5d18470aad3c66663ae6fe:dune-project
+d3eb793d9c455d6f81426d874f7d06d1:dune-project
 # end context for dune-project
 
 # begin context for opam/ocplib_stuff.opam
 # file opam/ocplib_stuff.opam
-3d15851857f0064ce0ef029d525ff5a9:opam/ocplib_stuff.opam
+adc0c8b69f8ef9e9f533d6f0a20a9aee:opam/ocplib_stuff.opam
 # end context for opam/ocplib_stuff.opam
 
 # begin context for scripts/after.sh
 # file scripts/after.sh
-1112fbe7067fce342365a25613b5659d:scripts/after.sh
+62c6489217feef26dac343e709b89c1a:scripts/after.sh
 # end context for scripts/after.sh
 
 # begin context for scripts/before.sh
 # file scripts/before.sh
-ae050b3099ac0b43d7c7f4295f6b2319:scripts/before.sh
+371e627833d9ac7ae2f906b5ec97aae2:scripts/before.sh
 # end context for scripts/before.sh
 
 # begin context for scripts/copy-bin.sh
@@ -155,13 +156,18 @@ bc59eea9e2077ed8b0acf08c767413b0:sphinx/conf.py
 
 # begin context for sphinx/license.rst
 # file sphinx/license.rst
-abc6ae223dbcd2a710665e948f370518:sphinx/license.rst
+7f09d28eb87ab9f2650899f85835e74a:sphinx/license.rst
 # end context for sphinx/license.rst
 
 # begin context for src/ocplib_stuff/index.mld
 # file src/ocplib_stuff/index.mld
 27a65ff15062dbc15fc4d5767a57b36a:src/ocplib_stuff/index.mld
 # end context for src/ocplib_stuff/index.mld
+
+# begin context for src/ocplib_stuff/package.toml
+# file src/ocplib_stuff/package.toml
+0be5ca2b051d2b233affcb26d21aa14c:src/ocplib_stuff/package.toml
+# end context for src/ocplib_stuff/package.toml
 
 # begin context for test/expect-tests/dune
 # file test/expect-tests/dune
@@ -186,6 +192,7 @@ e001d04969100c711855223ad6c23e6a:test/inline-tests/test.ml
 # begin context for test/output-tests/dune
 # file test/output-tests/dune
 a5878d37bc8af72fbcf823cea1b6660b:test/output-tests/dune
+0aa3a1cf82a6ddfbbf22a0cc3c92bcba:test/output-tests/dune
 # end context for test/output-tests/dune
 
 # begin context for test/output-tests/test1.expected
