@@ -2,8 +2,8 @@
 # Do not modify, or add to the `skip` field of `drom.toml`.
 opam-version: "2.0"
 name: "ocplib_stuff"
-version: "0.3.0"
-license: "LGPL-2.1-only with OCaml-LGPL-linking-exception"
+version: "0.4.0"
+license: "LGPL-2.1-only WITH OCaml-LGPL-linking-exception"
 synopsis: "Basic stuff used by some OCP libraries and tools"
 description: """\
 This library contains some basic stuff that is used in some OCP libraries 
@@ -44,5 +44,5 @@ depends: [
   "ppx_expect" {with-test}
   "odoc" {with-doc}
   "ocamlformat" {with-test}
-  "dune" {}
+  "dune" {>= "2.6.0"}
 ]

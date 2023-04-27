@@ -5,7 +5,7 @@
 (name ocplib_stuff)
 (allow_approximate_merlin)
 (generate_opam_files false)
-(version 0.3.0)
+(version 0.4.0)
 (formatting (enabled_for ocaml reason))
 
 (package
@@ -18,7 +18,7 @@
    ppx_expect
    odoc
    ocamlformat
-   dune
+   (dune ( >= 2.6.0 ))
   )
  )
 

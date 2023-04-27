@@ -30,7 +30,7 @@ let buffers = Array.init nsizes (fun _ -> Queue.create ())
 let lengths = Array.make nsizes 0
 
 let invalid_size size =
-  Printf.kprintf failwith
+  Printf.ksprintf failwith
     "ReentrantBuffer.get: size %d is not a power of two" size
 
 let get_power size =

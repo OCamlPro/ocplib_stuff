@@ -4,9 +4,10 @@ let () =
   let ocaml_version =
     try
       String.sub Sys.ocaml_version 0 6
-    with _ -> failwith "Wrong ocaml version"
+    with _ ->
+      Sys.ocaml_version
   in
-  let version =
+  let ezCompat_version =
     if ocaml_version < "4.02.0" then
       "3_12_1"
     else
@@ -16,7 +17,7 @@ let () =
       "4_03_0"
   in
 
-  Printf.kprintf
+  Printf.ksprintf
     Jbuild_plugin.V1.send
     "(library
  (public_name ocplib_stuff)
@@ -28,4 +29,4 @@ let () =
   )
 )
 "
-    version
+    ezCompat_version
